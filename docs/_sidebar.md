@@ -1,8 +1,8 @@
 - 快速开始
 
   - [为什么要转WEB3](quickstart.md)
-  - [什么是WEB3](whatweb3.md)
-  - [WEB3能做什么](howweb3.md)
+  - [什么是WEB3](whatWEB3.md)
+  - [WEB3能做什么](howWEB3.md)
   - [WEB3路线图](roadmap.md)
 
 
@@ -13,18 +13,18 @@
   - [钱包、地址、私钥、公钥、助记词](wallet.md)
   - [交易、Gas](gas.md)
   - [Token 类型详解（ERC-20、ERC-721、ERC-1155）](tokens.md)
-  - [Web3 核心应用场景概览](keys.md)
+  - [WEB3 核心应用场景概览](keys.md)
   - [交易背后的逻辑](tx.md)
 
-<!-- - Guide
+- 钱包的使用
 
-  - [Deploy](deploy.md)
-  - [Helpers](helpers.md)
-  - [Vue compatibility](vue.md)
+  - [WEB3钱包](web3wallet.md)
+  - [常见WEB3钱包产品介绍](commonwallets.md)
+  - [钱包安全](safewallet.md)
   - [CDN](cdn.md)
   - [Offline Mode (PWA)](pwa.md)
   - [Server-Side Rendering (SSR)](ssr.md)
   - [Embed Files](embed-files.md)
 
 - [Awesome docsify](awesome.md)
-- [Changelog](changelog.md)  -->
+- [Changelog](changelog.md) 
