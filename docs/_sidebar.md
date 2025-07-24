@@ -1,8 +1,8 @@
 - 快速开始
 
   - [为什么要转WEB3](quickstart.md)
-  - [什么是WEB3](whatWEB3.md)
-  - [WEB3能做什么](howWEB3.md)
+  - [什么是WEB3](whatweb3.md)
+  - [WEB3能做什么](howweb3.md)
   - [WEB3路线图](roadmap.md)
 
 
