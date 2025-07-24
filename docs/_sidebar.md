@@ -13,12 +13,10 @@
   - [钱包、地址、私钥、公钥、助记词](wallet.md)
   - [交易、Gas](gas.md)
   - [Token 类型详解（ERC-20、ERC-721、ERC-1155）](tokens.md)
-  <!-- - [Write a Plugin](write-a-plugin.md)
-  - [Markdown configuration](markdown.md)
-  - [Language highlighting](language-highlight.md)
-  - [Emoji](emoji.md)
+  - [Web3 核心应用场景概览](keys.md)
+  - [交易背后的逻辑](tx.md)
 
-- Guide
+<!-- - Guide
 
   - [Deploy](deploy.md)
   - [Helpers](helpers.md)
