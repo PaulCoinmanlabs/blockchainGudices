@@ -21,10 +21,10 @@
   - [WEB3钱包](web3wallet.md)
   - [常见WEB3钱包产品介绍](commonwallets.md)
   - [钱包安全](safewallet.md)
-  - [CDN](cdn.md)
+  <!-- - [CDN](cdn.md)
   - [Offline Mode (PWA)](pwa.md)
   - [Server-Side Rendering (SSR)](ssr.md)
   - [Embed Files](embed-files.md)
 
 - [Awesome docsify](awesome.md)
-- [Changelog](changelog.md) 
+- [Changelog](changelog.md)  -->
