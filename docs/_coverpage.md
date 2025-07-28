@@ -8,7 +8,7 @@
 > 作者：[Paul](https://x.com/PaulTalksCrypto)
 
 <p align="center">
-  <a href="#/quickstart" style="padding: 0.5em 1.5em; background: #42b983; color: white; border-radius: 6px; text-decoration: none; font-weight: bold;">📘 开始阅读</a>
+  <a href="#/warning" style="padding: 0.5em 1.5em; background: #42b983; color: white; border-radius: 6px; text-decoration: none; font-weight: bold;">📘 开始阅读</a>
   &nbsp;
   <a href="https://github.com/PaulCoinmanlabs/blockchainGudices" style="padding: 0.5em 1.5em; background: #2c3e50; color: white; border-radius: 6px; text-decoration: none; font-weight: bold;">⭐ GitHub 项目</a>
 </p>
