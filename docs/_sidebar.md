@@ -1,10 +1,6 @@
 - 什么是区块链
   - [警告你](warning.md)
   - [建议你了解下区块链](learnchain.md)
-  <!-- - [为什么要转WEB3](quickstart.md)
-  - [什么是WEB3](whatweb3.md)
-  - [WEB3能做什么](howweb3.md)
-  - [WEB3路线图](roadmap.md) -->
 
 - 为什么要转WEB3
   - [为什么要转WEB3](quickstart.md)
