@@ -2,6 +2,7 @@
   - [警告你](warning.md)
   - [一定要学会自己分辨信息](selfhain.md)
   - [你可能正在走向”死亡之路“](dead.md)
+  - [社交工具](social.md)
 
 - WEB3基础概念
   - [数字黄金的传奇-BTC](BTC.md)
