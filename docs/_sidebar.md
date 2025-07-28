@@ -4,6 +4,8 @@
   - [你可能正在走向”死亡之路“](dead.md)
 
 - WEB3基础概念
+  - [数字黄金的传奇-BTC](BTC.md)
+  - [去中心化世界计算机-ETH](ETH.md)
   - [区块链是怎么运作的](how-blockchain-works.md)
   - [区块链基础知识](blockchain.md)
   - [公链、私链](chain.md)
