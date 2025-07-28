@@ -15,7 +15,7 @@
     <script src="https://cdn.jsdelivr.net/npm/docsify@4"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/docsify-sidebar-collapse@1.4.0/dist/docsify-sidebar-collapse.min.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/docsify-footer-enh/dist/docsify-footer-enh.min.js"></script>
 
     <script>
       window.$docsify = {
@@ -27,7 +27,191 @@
         coverpage: true,
         themeable: true,
         plugins: [window.DocsifySidebarCollapse],
+        footer: {
+          copy: "© 2025 CoinMan Labs",
+          auth: "作者：CoinMan Labs | 微信公众号：BlockchainGuide",
+          pre: "<hr/>",
+          style: "text-align: center; font-size: 14px; color: #666;",
+        },
       };
     </script>
+    <script>
+      (function () {
+        function createWatermarkCanvas({
+          text = "© BlockchainGuide",
+          width = 300,
+          height = 170,
+          font = "16px Arial",
+          color = "rgba(0,0,0,0.12)",
+          rotate = -30,
+        } = {}) {
+          const canvas = document.createElement("canvas");
+          canvas.width = width;
+          canvas.height = height;
+
+          const ctx = canvas.getContext("2d");
+          ctx.clearRect(0, 0, width, height);
+          ctx.fillStyle = color;
+          ctx.font = font;
+          ctx.translate(width / 2, height / 2);
+          ctx.rotate((Math.PI / 180) * rotate);
+          ctx.fillText(text, -ctx.measureText(text).width / 2, 0);
+
+          return canvas.toDataURL();
+        }
+
+        function applyWatermarkToBody() {
+          const watermarkId = "dynamic-watermark";
+
+          // 避免重复添加
+          if (document.getElementById(watermarkId)) return;
+
+          const div = document.createElement("div");
+          div.id = watermarkId;
+          div.style.pointerEvents = "none";
+          div.style.position = "fixed";
+          div.style.top = "0";
+          div.style.left = "0";
+          div.style.width = "100%";
+          div.style.height = "100%";
+          div.style.zIndex = "9999";
+          div.style.backgroundImage = `url('${createWatermarkCanvas()}')`;
+          div.style.backgroundRepeat = "repeat";
+          div.style.opacity = "1";
+
+          document.body.appendChild(div);
+        }
+
+        // 等页面加载后执行
+        document.addEventListener("DOMContentLoaded", applyWatermarkToBody);
+      })();
+      document.addEventListener("copy", function (e) {
+        e.preventDefault(); // 阻止默认复制行为
+        alert("内容禁止复制，如需转载请联系作者授权。");
+      });
+
+      // 禁止鼠标右键菜单（可选）
+      document.addEventListener("contextmenu", function (e) {
+        e.preventDefault();
+        alert("禁止右键菜单，如需内容请联系作者。");
+      });
+
+      // 禁止选中文本（可选）
+      document.body.style.userSelect = "none";
+    </script>
+    <style>
+      #author-card {
+        position: fixed;
+        bottom: 80px;
+        right: 30px;
+        width: 440x;
+        padding: 20px;
+        background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+        color: #eee;
+        border-radius: 16px;
+        font-size: 16px;
+        box-shadow: 0 0 12px rgba(0, 255, 255, 0.4),
+          0 0 24px rgba(0, 128, 255, 0.2);
+        backdrop-filter: blur(8px);
+        border: 1px solid rgba(0, 255, 255, 0.3);
+        z-index: 9999;
+        transition: transform 0.3s ease;
+      }
+
+      #author-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 0 20px rgba(0, 255, 255, 0.6),
+          0 0 40px rgba(0, 128, 255, 0.4);
+      }
+
+      #author-card img {
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+        float: left;
+        margin-right: 16px;
+        border: 2px solid #00ffff88;
+      }
+
+      #author-card .author-info {
+        overflow: hidden;
+      }
+
+      #author-card .author-info strong {
+        font-size: 18px;
+        color: #00e0ff;
+        display: block;
+        margin-bottom: 4px;
+      }
+
+      #author-card a {
+        color: #00ffff;
+        text-decoration: underline;
+        font-size: 14px;
+      }
+
+      @media (max-width: 768px) {
+        #author-card {
+          display: none;
+        }
+      }
+    </style>
+    <style>
+      .tooltip {
+        position: relative;
+        cursor: pointer;
+        color: #007bff;
+        text-decoration: underline;
+      }
+
+      .tooltip .tooltip-text {
+        visibility: hidden;
+        width: 180px;
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 6px 8px;
+        position: absolute;
+        z-index: 1000;
+        bottom: 125%; /* 显示在上方 */
+        left: 50%;
+        transform: translateX(-50%);
+        opacity: 0;
+        transition: opacity 0.3s;
+        pointer-events: none;
+      }
+
+      .tooltip:hover .tooltip-text {
+        visibility: visible;
+        opacity: 1;
+      }
+    </style>
+
+    <div id="author-card">
+      <img src="assets/avatar.png" alt="作者头像" />
+      <div class="author-info">
+        <a
+          href="https://x.com/PaulTalksCrypto"
+          target="_blank"
+          title="关注 X 获取更多信息"
+          style="
+            font-weight: bold;
+            font-size: 18px;
+            color: #00ffff;
+            text-decoration: none;
+          "
+        >
+          Paul加密奇葩说
+        </a>
+        <div style="white-space: nowrap">
+          <span style="color: #ffdd57">致力于让更多的人读懂区块链</span>
+        </div>
+        <a class="tooltip"
+          >查看免责声明
+          <span class="tooltip-text">本站信息不构成投资建议</span>
+        </a>
+      </div>
+    </div>
   </body>
 </html>
