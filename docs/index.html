@@ -76,22 +76,22 @@
           document.body.appendChild(div);
         }
 
-      //   // 等页面加载后执行
-      //   document.addEventListener("DOMContentLoaded", applyWatermarkToBody);
-      // })();
-      // document.addEventListener("copy", function (e) {
-      //   e.preventDefault(); // 阻止默认复制行为
-      //   alert("内容禁止复制，如需转载请联系作者授权。");
-      // });
+        // 等页面加载后执行
+        document.addEventListener("DOMContentLoaded", applyWatermarkToBody);
+      })();
+      document.addEventListener("copy", function (e) {
+        e.preventDefault(); // 阻止默认复制行为
+        alert("内容禁止复制，如需转载请联系作者授权。");
+      });
 
-      // // 禁止鼠标右键菜单（可选）
-      // document.addEventListener("contextmenu", function (e) {
-      //   e.preventDefault();
-      //   alert("禁止右键菜单，如需内容请联系作者。");
-      // });
+      // 禁止鼠标右键菜单（可选）
+      document.addEventListener("contextmenu", function (e) {
+        e.preventDefault();
+        alert("禁止右键菜单，如需内容请联系作者。");
+      });
 
-      // // 禁止选中文本（可选）
-      // document.body.style.userSelect = "none";
+      // 禁止选中文本（可选）
+      document.body.style.userSelect = "none";
       
     </script>
     <style>

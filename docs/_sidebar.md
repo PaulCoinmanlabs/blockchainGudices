@@ -15,6 +15,8 @@
   - [钱包、地址、私钥、公钥、助记词](wallet.md)
   - [交易、Gas](gas.md)
   - [什么是 Native Token](Native-Token.md)
+  - [什么是稳定币](stablecoin.md)
+  - [什么是空投](airdrop.md)
   - [Token 类型详解（ERC-20、ERC-721、ERC-1155）](tokens.md)
   - [什么是智能合约](constract.md)
   - [WEB3 核心应用场景概览](keys.md)
