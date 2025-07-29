@@ -201,7 +201,7 @@
   }
 </style>
 
-<h2>八、空投背后的生态影响</h2>
+### 9. 空投背后的生态影响
 
 <div class="card-container">
   <div class="card positive">
@@ -244,7 +244,7 @@
   </div>
 </div>
 
-<h2>九、未来空投趋势展望</h2>
+### 10. 未来空投趋势展望
 
 <div class="card-container">
   <div class="card positive">
